@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>P,R,S - Client</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id = "header">
+    <h1>P, R, S</h1>
+  </div>
+  <button id = "show_rules_button">Rules</button>
+  <!-- <div id="feedback"></div> -->
+
+  <div id="rules" class="hidden">
+    <h2>Rules</h2>
+    The game of P, R, S is based on trust, skill and determination.
+    Each player must:
+    <ul>
+      <li>Something, something, something</li>
+    </ul>
+  </div>
+
+  <button id = "show_stats_button">Stats</button>
+  <div id="stats" class="hidden">
+    <h2>Stats</h2>
+    <p id = "total_games"> </p>
+    <p id = "total_wins"> </p>
+    <p id = "win_loss"> </p>
+    <p id = "player_stats"> </p>
+    <p id = "browser_stats"> </p>
+  </div>
+
+  <div id="enter_name" class="hidden">
+    <h2>Enter your Name</h2>
+      <input type="text" id="name" style="width: 100px" />
+      <input id="submit_name" type="submit" />
+  </div>
+
+  <div id="throw_choice" class = "hidden">
+    <h2 id = "game_header">Play the Game</h2>
+    <select id ="dropdown">
+      <option value="0"> </option>
+      <option value="1">Rock</option>
+      <option value="2">Paper</option>
+      <option value="3">Scissors</option>
+    </select>
+    <button id = "throw_choice_button">Throw</button>
+  </div>
+
+  <div id="game_results"> </div>
+
+  <footer>
+    Brought to you by the cool kids of Software Engineering - Fall, 2018.
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

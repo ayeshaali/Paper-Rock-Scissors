@@ -1,0 +1,24 @@
+body {
+  background-color: #123C69;
+}
+
+h1 {
+  color: #ff0000;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+div {
+  margin: 50px;
+  padding: 10px;
+  background-color: #ffffff;
+  background-color: #dddddd;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display:block;
+}
