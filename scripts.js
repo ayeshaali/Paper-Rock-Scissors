@@ -21,6 +21,11 @@ document.getElementById("reset").addEventListener("click", function() {
   $("select").each(function() { this.selectedIndex = 0 });
 });
 
+window.onbeforeunload = function() {
+  localStorage.removeItem("player_name");
+  return '';
+};
+
 function printStats() {
   stats_list.forEach(element => {
     document.getElementById(element.toString()).innerHTML = element.toString()+": "+localStorage.getItem(element.toString());
