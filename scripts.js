@@ -76,7 +76,7 @@ function throwChoice() {
       changeVisibility("game_results", "hidden");
       winner_text.innerHTML = "The winner is "+winner+ "!";
       player_text.innerHTML = "You threw "+possible_choices[player_choice-1]+ "!";
-      npc_text.innerHTML = "The winner is "+possible_choices[npc_choice-1]+ "!";
+      npc_text.innerHTML = "The computer threw "+possible_choices[npc_choice-1]+ "!";
       printStats();
     }
   });

@@ -47,16 +47,16 @@ div {
   text-align: center;
 }
 
-footer {
-  background-color: #efefef;
-  text-align: center;
-  height: 20px;
-  padding: 5px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 150;
-  margin-top: 50px
+#player_image {
+  padding-top: 3em;
+  float: left;
+  padding-left: 23em;
+}
+
+#npc_image {
+  padding-top: 3em;
+  float: right;
+  padding-right: 23em;
 }
 
 #show_rules_button, #show_stats_button {
@@ -74,16 +74,16 @@ footer {
   cursor: pointer;
 }
 
-#player_image {
-  padding-top: 3em;
-  float: left;
-  padding-left: 23em;
-}
-
-#npc_image {
-  padding-top: 3em;
-  float: right;
-  padding-right: 23em;
+footer {
+  background-color: #efefef;
+  text-align: center;
+  height: 20px;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 150;
+  margin-top: 50px
 }
 
 .content {
