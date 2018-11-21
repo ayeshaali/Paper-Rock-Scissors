@@ -1,10 +1,10 @@
 var express = require('express');
 var fs = require('fs');
+const PORT = process.env.PORT || 5000
 
 var app = express();
 app.use(express.static('public'));
-var port = 3000;
-app.listen(port, function(){
+app.listen(PORT, function(){
   console.log('Easy server listening for requests on port'+ port+'!');
 });
 
