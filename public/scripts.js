@@ -28,9 +28,9 @@ function throwChoice() {
   npc_text= document.getElementById("npc");
   var winner;
 
-  var player = localStorage.getItem('player');
+  var player = JSON.parse(localStorage.getItem('player'));
   console.log(player);
-  var npc = localStorage.getItem('npc')
+  var npc = JSON.parse(localStorage.getItem('npc'));
   if (!player) {
     console.log("new player");
     player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
