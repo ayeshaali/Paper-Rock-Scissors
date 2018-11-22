@@ -28,6 +28,17 @@ function throwChoice() {
   npc_text= document.getElementById("npc");
   var winner;
 
+  var player = localStorage.getItem('player');
+  var npc = localStorage.getItem('npc')
+  if (!player) {
+    player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+  }
+
+  if (!npc_stats) {
+    npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+  }
+  
+
   throw_button.addEventListener("click", function() {
     player["Total Games"] += 1;
     npc["Total Games"] += 1;

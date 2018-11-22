@@ -9,5 +9,4 @@ function printStats() {
   document.getElementById("Win Loss Ratio").innerHTML = "Win Loss Ratio: "+parseFloat((player_obj["Win Loss Ratio"]).toFixed(2));
   document.getElementById("player_stats").innerHTML = "Rock: "+(player_obj["rock"]/player_obj["Total Games"])*100+"% Paper: "+(player_obj["paper"]/player_obj["Total Games"])*100+"% Scissors: "+(player_obj["scissors"]/player_obj["Total Games"])*100+"%";
   document.getElementById("browser_stats").innerHTML = "Rock: "+(npc_obj["rock"]/player_obj["Total Games"])*100+"% Paper: "+(npc_obj["paper"]/player_obj["Total Games"])*100+"% Scissors: "+(npc_obj["scissors"]/player_obj["Total Games"])*100+"%";
-
 }
