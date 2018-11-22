@@ -34,10 +34,9 @@ function throwChoice() {
     player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
   }
 
-  if (!npc_stats) {
+  if (!npc) {
     npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
   }
-  
 
   throw_button.addEventListener("click", function() {
     player["Total Games"] += 1;
