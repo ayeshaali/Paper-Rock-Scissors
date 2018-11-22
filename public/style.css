@@ -65,6 +65,7 @@ div {
 }
 
 #show_rules_button, #show_stats_button {
+  text-decoration: none;
   position: relative;
   left: -5px;
   font-family: "Montserrat";

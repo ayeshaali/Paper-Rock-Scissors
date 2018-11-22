@@ -5,10 +5,10 @@ var npc_choice;
 var possible_choices = ["rock", "paper", "scissors"];
 
 //localStorage
-var player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
-var npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
-localStorage.setItem("player", JSON.stringify(player));
-localStorage.setItem("npc", JSON.stringify(npc));
+// var player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+// var npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+// localStorage.setItem("player", JSON.stringify(player));
+// localStorage.setItem("npc", JSON.stringify(npc));
 
 var feedback_div = document.getElementById("feedback");//feedback
 // makeToggable(document.getElementById("show_rules_button"), document.getElementById("rules"));
@@ -29,8 +29,10 @@ function throwChoice() {
   var winner;
 
   var player = localStorage.getItem('player');
+  console.log(player);
   var npc = localStorage.getItem('npc')
   if (!player) {
+    console.log("new player");
     player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
   }
 
