@@ -33,11 +33,13 @@ function throwChoice() {
   var npc = JSON.parse(localStorage.getItem('npc'));
   if (!player) {
     console.log("new player");
-    player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+    player = new New_Player();
+    // player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
   }
 
   if (!npc) {
-    npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+    // npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
+    npc = new New_Player();
   }
 
   throw_button.addEventListener("click", function() {
@@ -143,5 +145,18 @@ function changeVisibility(idName, starting) {
   } else {
     document.getElementById(idName).classList.remove("hidden");
     document.getElementById(idName).classList.add("visible");
+  }
+}
+
+
+class New_Player {
+  constructor() {
+    this["Total Games"] = 0; 
+    this["Total Wins"] = 0;
+    this["losses"] = 0;
+    this["Win Loss Ratio"] = 0;
+    this["rock"] = 0;
+    this["paper"] = 0;
+    this["scissors"] = 0;  
   }
 }
