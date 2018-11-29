@@ -1,19 +1,24 @@
-var player_name; //saveName()
-//throwChoice()
+var player_name;
 var player_choice;
 var npc_choice;
 var possible_choices = ["rock", "paper", "scissors"];
+var feedback_div = document.getElementById("feedback");
 
-//localStorage
-// var player = {"Total Games":0, "Total Wins": 0, "losses": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
-// var npc = {"Total Games":0, "Total Wins": 0, "Win Loss Ratio": 0, "rock": 0, "paper": 0, "scissors": 0};
-// localStorage.setItem("player", JSON.stringify(player));
-// localStorage.setItem("npc", JSON.stringify(npc));
 
-var feedback_div = document.getElementById("feedback");//feedback
-// makeToggable(document.getElementById("show_rules_button"), document.getElementById("rules"));
-// makeToggable(document.getElementById("show_stats_button"), document.getElementById("stats"));
-saveName();
+class New_Player {
+  constructor() {
+    this["Total Games"] = 0;
+    this["Total Wins"] = 0;
+    this["losses"] = 0;
+    this["Win Loss Ratio"] = 0;
+    this["rock"] = 0;
+    this["paper"] = 0;
+    this["scissors"] = 0;
+  }
+}
+
+
+ saveName();
 throwChoice();
 
 document.getElementById("reset").addEventListener("click", function() {
@@ -145,18 +150,5 @@ function changeVisibility(idName, starting) {
   } else {
     document.getElementById(idName).classList.remove("hidden");
     document.getElementById(idName).classList.add("visible");
-  }
-}
-
-
-class New_Player {
-  constructor() {
-    this["Total Games"] = 0; 
-    this["Total Wins"] = 0;
-    this["losses"] = 0;
-    this["Win Loss Ratio"] = 0;
-    this["rock"] = 0;
-    this["paper"] = 0;
-    this["scissors"] = 0;  
   }
 }
