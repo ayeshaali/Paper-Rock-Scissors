@@ -1,3 +1,5 @@
 # Paper-Rock-Scissors
 
-https://whispering-chamber-72902.herokuapp.com/
+#### A Trinity Software Engineering Project 
+
+The first iteration of the PRS project
